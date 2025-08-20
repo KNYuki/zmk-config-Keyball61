@@ -99,4 +99,26 @@
 
         diode-direction = "col2row";
     };
+
+behaviors {
+    scroll_up: scroll_up {
+        compatible = "zmk,behavior-mouse-move";
+        move = <0 -20>; // scroll up
+    };
+
+    scroll_down: scroll_down {
+        compatible = "zmk,behavior-mouse-move";
+        move = <0 20>; // scroll down
+    };
+
+    scroll_left: scroll_left {
+        compatible = "zmk,behavior-mouse-move";
+        move = <-20 0>; // scroll left
+    };
+
+    scroll_right: scroll_right {
+        compatible = "zmk,behavior-mouse-move";
+        move = <20 0>; // scroll right
+    };
+};
 };
