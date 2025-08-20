@@ -31,21 +31,21 @@
         default_layer {
             label = "QWRT";
             bindings = <
-&kp ESC           &kp N1  &kp N2        &kp N3            &kp N4        &kp N5                                 &kp N6  &kp N7  &kp N8     &kp N9   &kp N0            &kp BSPC
-&kp TAB           &kp Q   &kp W         &kp E             &kp R         &kp T                                  &kp Y   &kp U   &kp I      &kp O    &kp P             &kp BACKSLASH
-&kp LEFT_SHIFT    &kp A   &kp S         &kp D             &kp F         &kp G                                  &kp H   &kp J   &kp K      &kp L    &kp SEMI          &kp SQT
-&none             &kp Z   &kp X         &kp C             &kp V         &kp B      &kp PAGE_UP  &kp PAGE_DOWN  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH          &kp ENTER
-&kp K_PLAY_PAUSE  &none   &kp LEFT_GUI  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp SPACE  &mo 1        &none          &none                               &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp ESC           &kp N1  &kp N2        &kp N3            &kp N4        &kp N5                           &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &kp BSPC
+&kp TAB           &kp Q   &kp W         &kp E             &kp R         &kp T                            &kp Y   &kp U   &kp I      &kp O    &kp P     &kp BACKSLASH
+&kp LEFT_SHIFT    &kp A   &kp S         &kp D             &kp F         &kp G                            &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
+&mo 1             &kp Z   &kp X         &kp C             &kp V         &kp B      &to 6  &kp PAGE_DOWN  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp ENTER
+&kp K_PLAY_PAUSE  &none   &kp LEFT_GUI  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp SPACE  &mo 3  &none          &mo 1                               &none     &none
             >;
         };
 
         number_layer {
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                  &kp N6    &kp N7    &kp N8          &kp N9      &kp N0     &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans    &trans    &trans          &trans      &kp MINUS  &kp EQUAL
-&trans  &none   &none   &none   &none   &trans                  &kp LEFT  &kp DOWN  &kp DOWN_ARROW  &kp RIGHT   &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &kp COMMA       &kp PERIOD  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                          &trans     &trans
+&kp TILDE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                  &kp N6    &kp N7    &kp N8            &kp N9             &kp N0     &trans
+&trans     &trans  &trans  &trans  &trans  &trans                  &trans    &trans    &trans            &trans             &kp MINUS  &kp EQUAL
+&trans     &none   &none   &none   &none   &trans                  &kp LEFT  &kp DOWN  &kp DOWN_ARROW    &kp RIGHT          &trans     &trans
+&trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &trans
+&trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                   &trans     &trans
             >;
 
             label = "NUM";
@@ -95,14 +95,14 @@
             >;
         };
 
-        snipe_layer {
-            label = "SNIPE";
+        game_layer {
+            label = "game";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans  &trans
+&kp ESC         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                     &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB         &trans        &kp W         &kp E         &kp R         &trans                     &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F         &trans                     &trans  &trans  &trans  &trans  &trans  &trans
+&mkp MCLK       &kp I         &kp B         &kp O         &kp P         &kp M      &tog 0  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans        &trans        &kp LCTRL     &kp LEFT_ALT  &kp SPACE  &mo 3   &trans  &trans                          &trans  &trans
             >;
         };
     };
